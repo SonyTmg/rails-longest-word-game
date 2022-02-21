@@ -1,0 +1,7 @@
+<h1>Result</h1>
+<% if @valid_word %>
+  <strong>Congratulations!</strong><%= @valid_word %> is a valid English word!
+<% else %>
+<strong>Invalid word</strong>
+<% end %>
+<%= link_to "Play again", new_path %>
